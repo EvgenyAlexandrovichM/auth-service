@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-config
+  namespace: auth-system
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/authdb
+  SPRING_DATASOURCE_USERNAME: authuser
+  SPRING_DATASOURCE_PASSWORD: authpass
+  SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
